@@ -29,5 +29,8 @@
     "jest": "^24.5.0",
     "lint-staged": "^8.1.5",
     "nodemon": "^1.18.10"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
   }
 }

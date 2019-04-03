@@ -8,8 +8,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "nodemon app.js",
-    "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "test": "yarn lint && yarn jest"
   },
   "husky": {
     "hooks": {

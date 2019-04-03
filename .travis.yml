@@ -1,15 +1,22 @@
 language: node_js
+
 node_js:
 - '10'
+
 before_install:
 - curl -o- -L https://yarnpkg.com/install.sh | bash
 - export PATH="$HOME/.yarn/bin:$PATH"
+
 install: yarn --frozen-lockfile
+
 cache:
   directories:
   - node_modules
+
 script:
 - yarn run test
+
 notifications:
   slack:
     secure: cPlgnKU0DlBVlpxzKoRL8xpm57DnlDcF3eOTh5jEI0gaV9swb6Rs36ka5Eb/SGfbHFfCwFYXb7ARZLJlMrg02sVCfzrzbqg8jFdxER6q1LtrE964tYvFKH4pzSuONKlqn/Tw7Ozf6GUFpLOWFPABC8N/9GbHDiHDTY2PZgWxJ8tNgW+uAjsZb8VaccXz3EKp06H+WTwzF5pcR9aV8qS+LaNdHqMBO5DqyT76fpGjVrLHNsPjbGz26EgMUuaIyHoFs6Fr7AguNVsIdjoBRqumw2bF5hkFrHmWP1k/lk/8gS7PL0LlFSOpV5kvL8M5KUTQNwlSMFFJGKvJq9osxGq9kxDRDkC3j62Vyv44zCY7nylvTQevcz1tWE2q/c8Qnx3aQoVKJv/uUfjqPCCy9KpXpflPBxr/YFxmLOn+Xm3yeRKVHKce+/gcGBXabRbiAf9CTGyh2rDW3b1bkRe2e0vzG+IH2JRAKH83rqcJT/f5jxhZJmCeY+R7wLcN5vikQuF6kZz+NCZB1HDPIGj3Q1Nlv2yazOZUdiqmI5PYoyQ30vm5uGZxrPT+YE6MGVy14eBuTBlys0/W4dhGFGxHXPd14SBbyGFdFU8JpFTp7M0xHr63xGGIdv6Fjj2lwYzpLqx/f0wT4HU6fHeErznzie5yanbGTPV4BPENql5hhOaU2TI=
+    

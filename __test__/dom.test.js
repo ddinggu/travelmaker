@@ -2,7 +2,7 @@
 
 const $ = require('jquery');
 const path = require('path');
-const mockDir = path.dirname(__dirname + '/../googleMapMarkerLabels.html');
+const mockDir = path.join(__dirname + '/../googleMapMarkerLabels.html');
 const html = require('fs').readFileSync(mockDir);
 
 describe('Google Map', () => {
